@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Images/logo.png" alt="Logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <img
+              src="Images/cross.svg"
+              class="menu-icon"
+              onclick="closemenu()"
+            />
+          </ul>
+          <img src="Images/menu.svg" class="menu-icon" onclick="openmenu()" />
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi I'm <span>Pawan</span> Sharma</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------about----------   -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/IMG_2307.JPG" alt="User" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              A dedicated and hardworking computer science graduate with strong
+              foundation in DATA STRUCTURES and ALGORITHM using JAVA,
+              complemented by proficiency in frontend technologies such as HTML,
+              CSS, JAVASCRIPT and REACT JS. Possesses keen interest in learning
+              new technologies and a commitment to continuous professional
+              development. Seeking an entry-level position where I can apply my
+              skills and grow as a software developer.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Frontend Web Developer</span><br />HTML, CSS, JAVASCRIPT
+                </li>
+                <li>
+                  <span>DSA</span><br />Data Structures & Algorithm with JAVA
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2024</span><br />Frontend developer intern</li>
+                <li><span>2024</span><br />Java developer intern</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Bachelor of Computer Application</span><br />JECRC
+                  Univercity Jaipur<br />
+                  <span style="font-size: 10px">2022-2025</span>
+                </li>
+                <li>
+                  <span>Senior Secondary School</span><br />Eklavya
+                  International school<br />
+                  <span style="font-size: 10px">2020-2021</span>
+                </li>
+                <li>
+                  <span>Secondary School</span><br />Eklavya International
+                  school<br />
+                  <span style="font-size: 10px">2018-2019</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------Services------------------ -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <img src="Images/code.svg" class="icon-img" alt="" />
+            <h2>Frontend Web Developer</h2>
+            <p>
+              I specialize in building high-performance web applications using
+              HTML, CSS and JAVASCRIPT. My projects have consistently resulted
+              in improved performance and user satisfaction. I bring a proactive
+              approach to project leadership and technical innovation.
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------portfolio---------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/library.jpeg" alt="" />
+            <div class="layer">
+              <h3>Library Management System</h3>
+              <p>
+                A Library Management System streamlines resource management,
+                enhances user experience, and ensures efficient operations.
+              </p>
+              <a
+                href="github.com/Pawan9149/Library-Management-System-Project"
+                target="_blank"
+                ><img src="Images/link.svg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/music1.jpeg" alt="" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                Enjoy your favorite tunes with a sleek and easy-to-use music player.
+              </p>
+              <a href="https://github.com/Pawan9149/Music-Player"target="_blank"><img src="Images/link.svg" alt="" /></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/train.jpeg" alt="" />
+            <div class="layer">
+              <h3>Online Reservation System</h3>
+              <p>
+                Seamlessly book your journey with just a few clicks, anytime, anywhere.
+              </p>
+              <a href="https://github.com/Pawan9149/Online-Reservation-System-Project"target="_blank"><img src="Images/link.svg" alt="" /></a>
+            </div>
+          </div>
+        <!-- </div>
+        <a href="#" class="btn">See more</a>
+      </div> -->
+    </div>
+    <!-- -------------------contact----------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <img src="Images/send.svg" alt="" /> pawansharma94140@gmail.com
+            </p>
+            <p><img src="Images/call.svg" alt="" />+91 9414049149</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/pawan-sharma-57b603257/"target="_blank"><img src="Images/linkedin.svg" alt="" /></a>
+              <a href="https://github.com/Pawan9149?tab=repositories"target="_blank"><img src="Images/github.svg" alt="" /></a>
+              <!-- <a href="#"><img src="Images/instagram.svg" alt="" /></a> -->
+              <a href="https://leetcode.com/u/Pawan94140/"target="_blank"><img src="Images/leetcode.svg" alt="" /></a>
+            </div>
+            <a href="Resume.pdf" download class="btn btn2">Download Cv</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2" style="cursor: pointer">
+                Submit
+              </button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright &#169; Pawan.Made by using
+          <img src="Images/heart.svg" alt="" /> HTML CSS JAVASCRIPT
+        </p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbydIDN5NVEW1ezoqoLWCe6uKGrpQr0gmMXX7AAAMiQawlOZpQY3nXyK3_RHwVvuH3Yw/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
